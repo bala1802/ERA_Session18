@@ -28,5 +28,5 @@ def get_transform():
                                   ])
 
 def get_dataloader(train, path):
-    dataset = MNIST(root='path', train=train,transform=get_transform() ,download=True) # transforms.ToTensor()
+    dataset = MNIST(root=path, train=train,transform=get_transform() ,download=True) # transforms.ToTensor()
     return DataLoader(dataset = dataset, batch_size=32,shuffle=True,collate_fn=collate_fn)
