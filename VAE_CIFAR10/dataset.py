@@ -29,4 +29,4 @@ def get_transform():
 
 def get_dataloader(train, path):
     dataset = CIFAR10(root=path, train=train, transform=get_transform(), download=True)
-    return DataLoader(dataset=dataset, batch_size=24, shuffle=True, collate_fn=collate_fn, num_workers=32)
+    return DataLoader(dataset=dataset, batch_size=24, shuffle=True if train else False, collate_fn=collate_fn, num_workers=32)
