@@ -10,4 +10,4 @@ def train(train_dataloader, val_dataloader):
     trainer = pl.Trainer(accelerator='gpu', devices=1, max_epochs=20, logger= [CSVLogger(save_dir="logs/")],
                     callbacks=[LearningRateMonitor(logging_interval="step")])
     trainer.fit(model, train_dataloader, val_dataloader)
-    return trainer
+    return model, trainer
