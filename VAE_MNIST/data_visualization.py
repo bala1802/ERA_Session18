@@ -10,7 +10,7 @@ def plot_metrics(trainer):
     metrics = pd.read_csv(f"{trainer.logger.log_dir}/metrics.csv")
     del metrics["step"]
     metrics.set_index("epoch", inplace=True)
-    display(metrics.dropna(axis=1, how="all").head(400))
+    print(metrics.dropna(axis=1, how="all").head(400))
     sn.relplot(data=metrics, kind="line")
 
 def generate_image(x, y, wrong_y, model,num_predictions=25):
