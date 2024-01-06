@@ -156,4 +156,7 @@ class VAE(pl.LightningModule):
             'multilabel loss':ml_loss.mean(),
             'total loss':total_loss
         })
+
+        self.training_step_outputs.append(total_loss)
+        
         return total_loss
