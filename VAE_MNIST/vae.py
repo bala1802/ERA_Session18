@@ -5,6 +5,8 @@ from torch.nn import functional as F
 from torch.optim.lr_scheduler import OneCycleLR
 import torch.optim as optim
 
+import config
+
 class VAE(pl.LightningModule):
   def __init__(self,enc_out_dim=32, latent_dim=256, featureDim=64*24*24):
 
@@ -58,13 +60,13 @@ class VAE(pl.LightningModule):
         return x_hat_class
 
   def configure_optimizers(self):
-        optimizer = optim.Adam(self.parameters(), lr=1e-4)
+        optimizer = optim.Adam(self.parameters(), lr=config.LEARNING_RATE)
         scheduler = OneCycleLR(
                 optimizer,
-                max_lr= 1E-3,
+                max_lr= config.MAX_LEARNING_RATE,
                 pct_start = 5/self.trainer.max_epochs,
                 epochs=self.trainer.max_epochs,
-                steps_per_epoch=len(train_dataloader),
+                steps_per_epoch=config.STEPS_PER_EPOCH,
                 div_factor=100,
                 three_phase=False,
                 final_div_factor=100,
