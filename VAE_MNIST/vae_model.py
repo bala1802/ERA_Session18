@@ -112,36 +112,16 @@ class VAE(pl.LightningModule):
 
             return x_hat,x_multilabel,z,mu,std
 
-      '''
-      Deprecated
-      '''
-      # def training_epoch_end(self,outputs):
-      #       loss = torch.stack([x['loss'] for x in outputs]).mean()
-
-      #       print("****Training****")
-      #       print(f'Epoch {self.current_epoch}: Train loss {loss}')
-
       def on_train_epoch_end(self):
             loss = torch.stack(self.training_step_outputs).mean()
             print("****Training****")
             print(f'Epoch {self.current_epoch}: Train loss {loss}')
-      
-      '''
-      Deprecated
-      '''
-      # def validation_epoch_end(self,outputs):
-      #       loss = torch.stack([x for x in outputs]).mean()
-
-      #       print("****Validation****")
-      #       print(f'Epoch {self.current_epoch}: Validation loss {loss}')
       
       def on_validation_epoch_end(self):
             loss = torch.stack(self.validation_step_outputs).mean()
             
             print("****Validation****")
             print(f'Epoch {self.current_epoch}: Validation loss {loss}')
-
-            
 
       def mutli_label_loss(self,x_multilabel,y_combo_one_hot):
             ml_loss = self.bce_loss(x_multilabel,y_combo_one_hot).sum(dim=1)
