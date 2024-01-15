@@ -41,6 +41,23 @@ Train vs Test Loss:
 ![image](https://github.com/bala1802/ERA_Session18/assets/22103095/3a33f927-ef24-48db-a2c8-6e3969325366)
 
 
+#### 2. Model Configuration: Maxpooling (Contraction block) + Transpose Convolution (Expansion block) + Dice Loss
+
+Summary:
+
+![image](https://github.com/bala1802/ERA_Session18/assets/22103095/c357acac-9868-4128-82a8-0ecab2fedb81)
+
+Prediction:
+
+![image](https://github.com/bala1802/ERA_Session18/assets/22103095/d0de2459-2e8a-48e3-b901-2e937d97ee0d)
+
+Train vs Test Loss:
+
+![image](https://github.com/bala1802/ERA_Session18/assets/22103095/d75a0abf-4578-4f9a-9c26-469b3fb2ad35)
+
+
+
+
 
 
 
