@@ -31,3 +31,8 @@ The purpose of this module is to build and train a Conditional Variation Auto En
 
 ![image](https://github.com/bala1802/ERA_Session18/assets/22103095/e7dfbb5f-834a-43e3-9ad7-367cecc7e1ef)
 
+#### Predictions - Generate new images:
+
+![image](https://github.com/bala1802/ERA_Session18/assets/22103095/41508399-19c1-4793-947b-051ccc27f4c7)
+
+
