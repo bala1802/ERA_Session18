@@ -28,6 +28,19 @@ The purpose of this module is to build and train a UNET model on the Oxford Pet 
 
 #### 1. Model Configuration: Maxpooling (Contraction block) + Transpose Convolution (Expansion block) + Binary Cross Entropy Loss
 
+Summary:
+
+![image](https://github.com/bala1802/ERA_Session18/assets/22103095/6b032b33-b3ff-41d8-9949-4baebef10a25)
+
+Prediction:
+
+![image](https://github.com/bala1802/ERA_Session18/assets/22103095/a0624e24-4ee2-44a8-a727-8b35235a6c26)
+
+Train vs Test Loss:
+
+![image](https://github.com/bala1802/ERA_Session18/assets/22103095/3a33f927-ef24-48db-a2c8-6e3969325366)
+
+
 
 
 
