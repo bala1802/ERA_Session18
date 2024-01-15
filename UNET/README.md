@@ -56,6 +56,39 @@ Train vs Test Loss:
 ![image](https://github.com/bala1802/ERA_Session18/assets/22103095/d75a0abf-4578-4f9a-9c26-469b3fb2ad35)
 
 
+#### 3. Model Configuration: Strided Convolution (Contraction block) + Transpose Convolution (Expansion block) + Binary Cross Entropy Loss
+
+Summary:
+
+![image](https://github.com/bala1802/ERA_Session18/assets/22103095/8a18661c-297c-4865-9ff0-97448a3725a8)
+
+Prediction:
+
+![image](https://github.com/bala1802/ERA_Session18/assets/22103095/070b2ffb-d179-4d49-8ee9-c4718fc4f3ac)
+
+Train vs Test Loss:
+
+![image](https://github.com/bala1802/ERA_Session18/assets/22103095/d5b93d0f-90bd-44ef-8605-e82f2dc9d679)
+
+#### 4. Model Configuration: Strided Convolution (Contraction block) + Bilinear Upsampling (Expansion block) + Dice Loss
+
+Summary:
+
+![image](https://github.com/bala1802/ERA_Session18/assets/22103095/0b9c9b2f-4084-4861-ac79-298156d823ff)
+
+Prediction:
+
+![image](https://github.com/bala1802/ERA_Session18/assets/22103095/23418ac9-23d0-4faa-998f-48d9424d582c)
+
+Train vs Test Loss:
+
+![image](https://github.com/bala1802/ERA_Session18/assets/22103095/9dc4e5e4-2379-4f64-9cf1-f42a369f73e0)
+
+
+
+
+
+
 
 
 
